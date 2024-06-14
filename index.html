@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Platform</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Trading Platform</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="home-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="search-link">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="chart-link">Chart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-4" id="content">
+        <!-- Home Page -->
+        <!-- Home Page -->
+<div id="home-page">
+  <div class="jumbotron text-center">
+      <h1 class="display-4">Welcome to the Trading Platform</h1>
+      <p class="lead">Your gateway to stock market data</p>
+      <hr class="my-4">
+      <p>Explore and track stock prices with ease.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button" id="get-started-btn">Get Started</a>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-body">
+                      <h5 class="card-title">Search Stocks</h5>
+                      <p class="card-text">Enter a stock symbol to get current and historical prices.</p>
+                      <a href="#" class="btn btn-primary" id="home-search-btn">Search Stocks</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-body">
+                      <h5 class="card-title">View Chart</h5>
+                      <p class="card-text">Visualize stock price trends with interactive charts.</p>
+                      <a href="#" class="btn btn-primary" id="home-chart-btn">View Chart</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-body">
+                      <h5 class="card-title">Learn More</h5>
+                      <p class="card-text">Explore resources and guides on trading and investing.</p>
+                      <a href="#" class="btn btn-primary" id="home-learn-btn">Learn More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+        
+        <!-- Search Page -->
+        <div id="search-page" class="d-none">
+            <h1>Search Stocks</h1>
+            <div id="search-container" class="mb-3">
+                <input type="text" id="search-input" class="form-control" placeholder="Enter stock symbol (e.g., AAPL)">
+                <div id="suggestions" class="suggestions-box"></div>
+            </div>
+            <div id="time-range-container" class="mb-3">
+                <select id="time-range" class="form-control">
+                    <option value="1">Today</option>
+                    <option value="2">Yesterday</option>
+                    <option value="30">Last 30 Days</option>
+                    <option value="90">Last 90 Days</option>
+                </select>
+            </div>
+            <div id="stock-container">
+                <h2>Stock Prices</h2>
+                <ul id="stock-list" class="list-group"></ul>
+            </div>
+        </div>
+        
+        <!-- Chart Page -->
+        <div id="chart-page" class="d-none">
+            <h1>Stock Chart</h1>
+            <canvas id="stock-chart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
