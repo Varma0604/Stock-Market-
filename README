@@ -1,0 +1,22 @@
+Welcome to the Trading Platform project! This platform is designed for educational purposes to explore and track stock market data using real-time APIs.
+
+
+Features
+Search Stocks: Enter a stock symbol to get current and historical prices.
+View Chart: Visualize stock price trends with interactive charts.
+Educational Disclaimer: Prices and data displayed may not be accurate or up-to-date.
+Technologies Used
+Frontend: HTML, CSS, JavaScript
+Charting Library: Chart.js
+API: Polygon API for fetching stock data
+Setup Instructions
+To set up this project locally, follow these steps:
+
+Clone this repository: git clone https://github.com/your-username/trading-platform.git
+Navigate to the project directory: cd trading-platform
+Open index.html in your web browser.
+Make sure to replace the API with your own as this was just for learning purposes
+
+Credits
+Chart.js: Open source charting library for JavaScript.
+Polygon API: Provides real-time and historical stock market data.
