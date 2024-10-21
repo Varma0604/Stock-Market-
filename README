@@ -1,22 +1,79 @@
-Welcome to the Trading Platform project! This platform is designed for educational purposes to explore and track stock market data using real-time APIs.
+# Trading Platform
 
+A responsive and interactive web application designed to allow users to search and track stock prices, visualize trends through charts, and access stock market data in a user-friendly interface.
 
-Features
-Search Stocks: Enter a stock symbol to get current and historical prices.
-View Chart: Visualize stock price trends with interactive charts.
-Educational Disclaimer: Prices and data displayed may not be accurate or up-to-date.
-Technologies Used
-Frontend: HTML, CSS, JavaScript
-Charting Library: Chart.js
-API: Polygon API for fetching stock data
-Setup Instructions
-To set up this project locally, follow these steps:
+## Features Overview
 
-Clone this repository: git clone https://github.com/your-username/trading-platform.git
-Navigate to the project directory: cd trading-platform
-Open index.html in your web browser.
-Make sure to replace the API with your own as this was just for learning purposes
+### 1. **Home Page**
+- A welcoming page featuring a brief introduction to the platform.
+- The user can navigate directly to core functionalities:
+  - Search Stocks
+  - View Charts
+  - Learn More about trading and investing
+- **Technologies Used**: HTML, CSS, Bootstrap
 
-Credits
-Chart.js: Open source charting library for JavaScript.
-Polygon API: Provides real-time and historical stock market data.
+### 2. **Search Stocks**
+- Users can search for specific stock symbols (e.g., AAPL for Apple).
+- Results include both current and historical stock price data, which can be filtered by time range (today, yesterday, last 30 days, or last 90 days).
+- **Technologies Used**: HTML, JavaScript, Bootstrap
+
+### 3. **Stock Chart Visualization**
+- Provides a visual representation of stock price trends over time using interactive charts.
+- Built using the popular Chart.js library for data visualization.
+- **Technologies Used**: Chart.js, JavaScript
+
+## Technical Specifications
+
+### HTML Structure:
+- **Navigation**: A responsive navbar using Bootstrap to navigate between the home, search, and chart pages.
+- **Container**: All content is wrapped in a `container` class for proper alignment and spacing.
+
+### CSS:
+- The platform uses both custom styles defined in `styles.css` and Bootstrap 4.5.2 for a modern and responsive design.
+
+### JavaScript Libraries:
+- **jQuery**: Simplifies DOM manipulation.
+- **Chart.js**: Used to create interactive charts for stock price visualization.
+- **Bootstrap**: Provides pre-built UI components like navbar, cards, and buttons.
+
+### JavaScript Functionality:
+- **Search Page**: Allows users to search for stock symbols and view stock prices across selected time ranges.
+- **Chart Page**: Renders dynamic charts showing stock trends based on the selected stock symbol and time period.
+
+## Pages
+
+### Home Page
+- A welcoming dashboard that provides an overview of the platform’s main features.
+- **Sections**:
+  - **Search Stocks**: Link to search functionality.
+  - **View Chart**: Link to interactive stock charts.
+  - **Learn More**: Educational resources on trading.
+
+### Search Page
+- Allows users to search for stock prices using a text input for stock symbols.
+- The page includes a time range filter to specify how far back the stock prices should be fetched.
+- **Input Fields**:
+  - Stock symbol input
+  - Time range selection dropdown
+- **Dynamic Elements**:
+  - A list that displays stock prices based on the search.
+
+### Chart Page
+- Displays a chart for the selected stock, generated using the Chart.js library.
+- The chart visually represents stock price data across the selected time period.
+
+## External Resources
+- **Bootstrap**: For responsive layout and pre-styled components.
+  - CDN: [Bootstrap 4.5.2](https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css)
+- **Chart.js**: For rendering interactive charts.
+  - CDN: [Chart.js](https://cdn.jsdelivr.net/npm/chart.js)
+- **JavaScript Dependencies**:
+  - jQuery (Slim Version): [CDN Link](https://code.jquery.com/jquery-3.5.1.slim.min.js)
+  - Popper.js (for Bootstrap tooltips and popovers): [CDN Link](https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js)
+  - Bootstrap JS: [CDN Link](https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js)
+
+## Possible Future Enhancements
+- **User Authentication**: Enable users to create accounts and save their favorite stock searches and chart settings.
+- **Real-Time Stock Data**: Integrate APIs that provide real-time stock price updates.
+- **Data Export**: Allow users to export stock price data and charts for further analysis.
+- **News Integration**: Display relevant financial news articles alongside stock search results to keep users informed of market events.
